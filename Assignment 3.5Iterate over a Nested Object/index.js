@@ -24,3 +24,12 @@ let kid5 = {
       },
     },
   };
+
+console.log(Object.keys(kid5));
+console.log(Object.keys(kid5.address));
+console.log(Object.keys(kid5.address.primary));
+console.log(Object.keys(kid5.address.alternate));
+
+for (let temporaryVariable of Object.keys(kid5)) {
+  console.log(`The key ${temporaryVariable} has value ${kid5[temporaryVariable]}`);
+}
